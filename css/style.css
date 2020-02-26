@@ -101,7 +101,7 @@ img {
 }
 @media only screen and (max-width: 767px) {
   .experiences {
-    padding: 7rem 0 10rem;
+    padding: 7rem 0 8rem;
   }
 }
 
@@ -719,6 +719,7 @@ img {
   border: 0;
   outline: none;
   padding: 0.5rem;
+  margin-left: -1rem;
 }
 .footer .form__input {
   outline: none;
