@@ -1,0 +1,22 @@
+.details {
+  &__features {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    row-gap: 2rem;
+    padding: 3rem;
+    align-content: start;
+    border: 1px solid $color-light-dark-2;
+    box-shadow: 0 0.5rem 1rem $color-light-dark-2;
+  }
+  &__text {
+    color: $color-light-dark-1;
+    font-size: 1.5rem;
+  }
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+    fill: $color-primary;
+    grid-column: 2 / 3;
+    grid-row: 1 / span 2;
+  }
+}

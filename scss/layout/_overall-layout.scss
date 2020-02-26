@@ -1,0 +1,105 @@
+// ------------------- OVERALL LAYOUT -----------------//
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+// FLEX LAYOUT
+.flex-items-container {
+  display: flex;
+  justify-content: space-between;
+
+  @include responsive(small) {
+    flex-direction: column;
+  }
+}
+
+.flex-1-of-2 {
+  width: calc((100% - 3rem) / 2);
+
+  @include responsive(small) {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.flex-1-of-3 {
+  width: calc((100% - 6rem) / 3);
+
+  @include responsive(small) {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.header {
+  height: 90rem;
+}
+
+.projects {
+  padding: 9rem 0 14rem;
+  background-image: url("../imgs/background-dot.png");
+
+  @include responsive(medium) {
+    padding: 8rem 0 10rem;
+  }
+}
+
+.experiences {
+  padding: 10rem 0 13rem;
+
+  // @include responsive(medium) {
+  //   padding: 10rem 0 5rem;
+  // }
+
+  @include responsive(small) {
+    padding: 7rem 0 10rem;
+  }
+}
+
+.comments {
+  padding: 10rem 0 14rem;
+
+  @include responsive(medium) {
+    padding: 10rem 0 7rem;
+  }
+
+  @include responsive(medium) {
+    padding: 7rem 0 7rem;
+  }
+}
+
+.quality {
+  padding: 10rem 0;
+}
+
+.branches {
+  padding: 10rem 0;
+}
+
+.posts {
+  padding: 13rem 0 12rem;
+
+  @include responsive(medium) {
+    padding: 8rem 0 6rem;
+  }
+}
+
+.footer {
+  padding: 13rem 0 15rem;
+
+  @include responsive(medium) {
+    padding: 7rem 0 7rem;
+  }
+}
+
+.details {
+  padding-bottom: 13rem;
+}

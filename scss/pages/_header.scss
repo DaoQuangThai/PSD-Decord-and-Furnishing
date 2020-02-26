@@ -1,0 +1,44 @@
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../../imgs/hero.png);
+  background-size: cover;
+  background-position: center;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img {
+    width: 5.2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    transition: background-color 0.2s;
+
+    @include responsive(small) {
+      width: 2.6rem;
+      padding: 1rem;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  &__content {
+    text-align: center;
+    width: 45%;
+
+    @include responsive(small) {
+      width: 70%;
+    }
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff !important;
+    @include responsive(small) {
+      font-size: 1.5rem;
+    }
+  }
+}

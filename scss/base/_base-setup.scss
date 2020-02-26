@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+
+  @include responsive(medium) {
+    font-size: 56.25%;
+  }
+
+  // @include responsive(small) {
+  //   font-size: 50%;
+  // }
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-dark;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $color-dark;
+}
+
+img {
+  display: block;
+  width: 100%;
+}

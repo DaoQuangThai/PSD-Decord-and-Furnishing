@@ -1,0 +1,22 @@
+@import "./helpers/variables";
+@import "./helpers/mixins";
+
+@import "./base/base-setup";
+
+@import "./layout/overall-layout.scss";
+
+@import "./components/heading";
+@import "./components/button";
+
+@import "./pages/nav";
+@import "./pages/header";
+@import "./pages/experiences";
+@import "./pages/projects";
+@import "./pages/comments";
+@import "./pages/quality";
+@import "./pages/details";
+@import "./pages/branches";
+@import "./pages/posts";
+@import "./pages/footer";
+
+@import "./utilities/utilities.scss";

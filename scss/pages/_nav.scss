@@ -1,0 +1,107 @@
+.menu {
+  max-width: 157rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    width: 3rem;
+  }
+
+  &__text {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 500;
+    // margin-right: auto;
+    margin-right: 5vw;
+    align-items: center;
+
+    &--footer {
+      margin-right: 0;
+    }
+
+    &-responsive {
+      height: 2px;
+      width: 4rem;
+      background-color: #000;
+      position: relative;
+      display: none;
+
+      &:after {
+        content: "";
+        height: 2px;
+        width: 4rem;
+        background-color: #000;
+        position: absolute;
+        top: -1rem;
+        display: block;
+      }
+
+      &:before {
+        content: "";
+        height: 2px;
+        width: 4rem;
+        background-color: #000;
+        position: absolute;
+        top: 1rem;
+        display: block;
+      }
+      @include responsive(small) {
+        display: block;
+      }
+    }
+
+    @include responsive(small) {
+      display: none;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+
+    @include responsive(medium) {
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+  }
+  &__link {
+    transition: color 0.2s;
+    &:hover {
+      color: $color-primary;
+    }
+    &--white {
+      color: #fff;
+    }
+  }
+  &__phone {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    @include responsive(small) {
+      display: none;
+    }
+  }
+}

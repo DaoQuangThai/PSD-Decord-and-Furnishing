@@ -1,0 +1,153 @@
+// variable
+$color-primary: #37bfd7;
+$color-light-dark: #d1d1d1;
+$color-dark: #3b3b3b;
+
+$font-primary: "Montserrat", sans-serif;
+
+// mixin
+
+// base set up
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-dark;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $color-dark;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+// overall layout
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+// FLEX LAYOUT
+.flex-items-container {
+  display: flex;
+  justify-content: space-between;
+
+  //   @include responsive(small) {
+  //     flex-direction: column;
+  //   }
+}
+
+.flex-1-of-2 {
+  width: calc((100% - 3rem) / 2);
+
+  // @include responsive(small) {
+  //   width: 100%;
+
+  //   &:not(:last-child) {
+  //     margin-bottom: 5rem;
+  //   }
+  // }
+}
+
+.flex-1-of-3 {
+  width: calc((100% - 6rem) / 3);
+
+  // @include responsive(small) {
+  //   width: 100%;
+
+  //   &:not(:last-child) {
+  //     margin-bottom: 3rem;
+  //   }
+  // }
+}
+
+// components
+.heading-4 {
+  font-weight: 600;
+  font-size: 2rem;
+
+  &--white {
+    color: #fff;
+  }
+}
+
+.heading-2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.heading-3 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+// projects
+.projects {
+  padding: 9rem 14rem;
+  background-image: url("../imgs/background-dot.png");
+}
+
+.projects {
+  &__top {
+    margin-bottom: 2rem;
+  }
+
+  &__view-all {
+    display: flex;
+
+    span {
+      color: $color-primary;
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+
+    img {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+    background-color: #000;
+  }
+
+  &__img {
+    opacity: 0.7;
+  }
+
+  &__content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(3rem, -3rem);
+  }
+
+  &__text {
+    color: #fff;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,19 @@
+.branches {
+  background-image: url("../../imgs/background-dot.png");
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 10rem;
+
+    @include responsive(medium) {
+      width: 9rem;
+    }
+    @include responsive(small) {
+      width: 5rem;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.projects {
+  &__top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    // @include responsive(small) {
+
+    // }
+  }
+
+  &__view-all {
+    display: flex;
+
+    span {
+      color: $color-primary;
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+
+    img {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+
+  &__item {
+    position: relative;
+    background-color: #000;
+  }
+
+  &__img {
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(3rem, -3rem);
+  }
+
+  &__text {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+}

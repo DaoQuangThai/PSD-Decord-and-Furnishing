@@ -1,0 +1,45 @@
+.heading-3 {
+  font-weight: 600;
+  font-size: 3rem;
+
+  &--white {
+    color: #fff;
+  }
+}
+
+.heading-2 {
+  font-weight: 700;
+  font-size: 3.5rem;
+
+  @include responsive(medium) {
+    font-size: 3rem;
+  }
+}
+
+.heading-4 {
+  font-weight: 600;
+  font-size: 1.5rem;
+
+  &--white {
+    color: #fff;
+  }
+
+  &--dark {
+    color: $color-dark;
+  }
+
+  &--width {
+    width: 70%;
+  }
+}
+
+.heading-1 {
+  font-weight: bold;
+  font-size: 7rem;
+  color: #fff;
+  line-height: 1.2;
+
+  @include responsive(small) {
+    font-size: 5rem;
+  }
+}
